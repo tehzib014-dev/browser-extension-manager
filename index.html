@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- html for logo and theme toogle -->
+    <div class="toogle">
+      <img src="/assets/images/logo.svg" alt="logo" />
+      <img src="/assets/images/icon-sun.svg" alt="theme toggle" />
+    </div>
+
+    <!-- html for navbar -->
+    <div class="nav">
+      <div class="left">Extensions List</div>
+      <div class="right">
+        <ul>
+          <li>All</li>
+          <li>Active</li>
+          <li>Inactive</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- html for extensions -->
+    <div class="grid">
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img src="/assets/images/logo-devlens.svg" alt="DevLens" /></span
+          ><span class="desc">
+            <h2>DevLens</h2>
+            <p>Quickly inspect page layout and visualize element boundaries.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-style-spy.svg"
+              alt="StyleSpy" /></span
+          ><span class="desc">
+            <h2>StyleSpy</h2>
+            <p>Instantly analyze and copy CSS from any webpage element</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-speed-boost.svg"
+              alt="SpeedBoost" /></span
+          ><span class="desc">
+            <h2>SpeedBoost</h2>
+            <p>Optimizes browser resource usage to accelerate page loading.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-json-wizard.svg"
+              alt="JSONWizard" /></span
+          ><span class="desc">
+            <h2>JSONWizard</h2>
+            <p>Formats, validates, and prettifies JSON reposes in-browser.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-tab-master-pro.svg"
+              alt="TabMaster Pro" /></span
+          ><span class="desc">
+            <h2>TabMaster Pro</h2>
+            <p>Organizes browser tabs into groups and sessions.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-viewport-buddy.svg"
+              alt="ViewportBuddy" /></span
+          ><span class="desc">
+            <h2>ViewportBuddy</h2>
+            <p>
+              Simulates various screen resolutions directly within the browser.
+            </p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-markup-notes.svg"
+              alt="Markup Notes" /></span
+          ><span class="desc">
+            <h2>Markup Notes</h2>
+            <p>
+              Enables annotation and nots directly onto webpages for
+              collaborative debugging.
+            </p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-grid-guides.svg"
+              alt="GridGuides" /></span
+          ><span class="desc">
+            <h2>GridGuides</h2>
+            <p>
+              Overlay customizable grids and alignment guides on any webpage.
+            </p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-palette-picker.svg"
+              alt="Palette Picker" /></span
+          ><span class="desc">
+            <h2>Palette Picker</h2>
+            <p>Instantly extracts color palettes from any webpage.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-link-checker.svg"
+              alt="Link Checker" /></span
+          ><span class="desc">
+            <h2>Link Checker</h2>
+            <p>Scans and highlights broken links on any page.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-dom-snapshot.svg"
+              alt="DOM Snapshot" /></span
+          ><span class="desc">
+            <h2>DOM Snapshot</h2>
+            <p>Capture and export DOM structures quickly.</p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="element">
+        <div class="upper">
+          <span
+            ><img
+              src="/assets/images/logo-console-plus.svg"
+              alt="ConsolePlus" /></span
+          ><span class="desc">
+            <h2>ConsolePlus</h2>
+            <p>
+              Enhanced developer console with advanced filtering and logging.
+            </p>
+          </span>
+        </div>
+        <div class="down">
+          <button>Remove</button>
+          <!-- The switch container -->
+          <label class="switch">
+            <!-- The actual checkbox input, which is hidden visually -->
+            <input type="checkbox" />
+            <!-- The span that is styled as the slider/toggle -->
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

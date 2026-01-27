@@ -1,0 +1,165 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: linear-gradient(180deg, #040918 0%, #091540 100%);
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 40px 60px;
+        color: hsl(0, 0%, 93%);
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+
+      /* css for logo and mode change  */
+      body .toogle {
+        display: flex;
+        justify-content: space-between;
+        background: hsl(225, 23%, 24%);
+        color: hsl(0, 0%, 93%);
+        padding: 0 6px;
+        border-radius: 15px;
+        margin-bottom: 50px;
+      }
+      body img {
+        padding: 10px;
+      }
+
+      /* css for navbar  */
+      body .nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+      }
+      body .nav .left {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      body .nav .right ul {
+        display: flex;
+        gap: 8px;
+        list-style: none;
+        font-size: 0.8rem;
+      }
+      body .nav .right ul li {
+        background: hsl(225, 23%, 24%);
+        padding: 3px 9px;
+        border-radius: 15px;
+        border: 1px solid hsl(226, 11%, 37%);
+        text-align: center;
+      }
+      body .nav .right ul li:active {
+        background: hsl(3, 71%, 56%);
+        color: #091540;
+      }
+
+      /* css for extensions  */
+      body .grid {
+        display: grid;
+        gap: 7px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      body .grid .element {
+        background: hsl(225, 23%, 24%);
+        border: 1px solid hsl(226, 11%, 37%);
+        border-radius: 12px;
+        padding: 10px 10px 12px 08px;
+      }
+      body .grid .element .upper {
+        display: flex;
+        margin-bottom: 20px;
+      }
+      body .grid .element .upper .desc {
+        margin: 8px 4px;
+      }
+      body .grid .element .upper h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+      body .grid .element .upper p {
+        font-size: 0.9rem;
+        font-weight: 300;
+      }
+      body .grid .element .down {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+      }
+      body .grid .element .down button {
+        background: hsl(225, 23%, 24%);
+        color: hsl(0, 0%, 93%);
+        padding: 5px 12px;
+        border: 1px solid hsl(226, 11%, 37%);
+        border-radius: 13px;
+        cursor: pointer;
+      }
+
+      /* css for active and unactive extension */
+      /* The main container for the switch */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+      }
+
+      /* Hide the default HTML checkbox */
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      /* The slider/track */
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        /* Smooth transition for background color change */
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      /* The "thumb" or circle on the slider */
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 4px;
+        bottom: 2px;
+        background-color: white;
+        /* Smooth transition for movement */
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      /* Change background color when the checkbox is checked (on) */
+      input:checked + .slider {
+        background-color: hsl(3, 86%, 64%);
+      }
+
+      /* Move the "thumb" to the right when checked (on) */
+      input:checked + .slider:before {
+        -webkit-transform: translateX(23px);
+        -ms-transform: translateX(23px);
+        transform: translateX(23px);
+      }
+
+      /* Optional: Add rounded corners for a pill shape */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 50%;
+      }
